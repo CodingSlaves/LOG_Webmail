@@ -57,26 +57,26 @@
     <div id="container">
     </div>
 
-    <div id="main">
+    <form id="main" class="mail-write-form" action="@@@@@" method="@@@@@" enctype="multipart/form-data">
         <div id="header-cover">
             <div id="header" class="asdf">
-                <form id="button-bundle" action="@@@@@" method="@@@@@">
-                    <input class="button" type="button" name="send" value="보내기">
-                    <input class="button" type="button" name="preview" value="미리보기">
-                    <input class="button" type="button" name="Save" value="임시저장">
-                </form>
+                <div id="button-bundle">
+                    <input class="button" type="submit" name="send" value="보내기">
+                    <input class="button" type="submit" name="preview" value="미리보기">
+                    <input class="button" type="submit" name="Save" value="임시저장">
+                </div>
             </div>
         </div>
         <div id="provider">
             <div id="provider-in">
                 <div id="letter">
                     <form action="@@@@@">
-
+                        <input type="text" name="text">
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
     
 </body>
 </html>
