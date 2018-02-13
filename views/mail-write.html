@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email</title>
+    <link rel="stylesheet" href="../public/stylesheets/main.css">
+    <script src="../public/javascripts/main.js"></script>
+</head>
+<body>
+    <!-- 오류중학교를 영어로 하면? -->
+    <!-- 에러미들스쿨 -->
+
+    <nav>
+        <div id="logo">
+            로고입니당~
+            <img src="../public/images/logo.png">
+        </div>
+        <div id="profile">
+            <div class="container-out">
+                <div class="container-in">
+                    <% user.name %>님 환영합니다!
+                </div>
+            </div>
+        </div>
+        <div class="nav-button">
+            <div class="container-out">
+                <div class="container-in">
+                    받은메일함
+                </div>
+            </div>
+        </div>
+        <div class="nav-button">
+            <div class="container-out">
+                <div class="container-in">
+                    보낸메일함
+                </div>
+            </div>
+        </div>
+        <div class="nav-button">
+            <div class="container-out">
+                <div class="container-in">
+                    임시 보관함
+                </div>
+            </div>
+        </div>
+        <div class="nav-button">
+            <div class="container-out">
+                <div class="container-in">
+                    메일쓰기
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="container">
+    </div>
+
+    <div id="main">
+        <div id="header-cover">
+            <div id="header" class="asdf">
+                <form id="button-bundle" action="@@@@@" method="@@@@@">
+                    <input class="button" type="button" name="send" value="보내기">
+                    <input class="button" type="button" name="preview" value="미리보기">
+                    <input class="button" type="button" name="Save" value="임시저장">
+                </form>
+            </div>
+        </div>
+        <div id="provider">
+            <div id="provider-in">
+                <div id="letter">
+                    <form action="@@@@@">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,205 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html, body {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+hr {
+    border-color: #FF4D4D;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+/* 네비게이션 */
+    nav {
+        flex: none;
+        position: fixed;
+        z-index: 1;
+        width: 350px;
+        height: 100%;
+        color: #ffffff;
+        background-color: rgb(255, 178, 134);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+    }
+
+    #logo {
+        box-sizing: border-box;
+        width: 100%;
+        height: 90px;
+        margin: auto;
+    }
+
+    #profile {
+        box-sizing: border-box;
+        width: 100%;
+        height: 90px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .nav-button {
+        z-index: 1;
+        box-sizing: border-box;
+        width: 100%;
+        height: 75px;
+        border-right: 13px dotted rgba(255, 77, 77, 0);
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: medium;
+        background-color: rgb(255, 178, 134);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.329) inset;
+        transition: 0.2s;
+    }
+    .nav-button:hover {
+        box-sizing: border-box;
+        width: 105%;
+        height: 75px;
+        font-size: large;
+        border-right: 13px dotted #FF4D4D;
+        background-color: rgb(255, 156, 98);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.329);
+    }
+/* 네비게이션-끝 */
+
+/* 컨테이너 */
+    #container {
+        flex: none;
+        width: 350px;
+        height: 100%;
+    }
+/* 컨테이너-끝*/
+
+/* 검색 */
+    #main {
+        flex: 1;
+        box-sizing: border-box;
+        vertical-align: top;
+        border-right: 0px dotted #FF4D4D;
+        border-left: 0px dashed #FF4D4D;
+    }
+
+    #header-cover {
+        position: fixed;
+        width: calc(100% - 350px);
+        height: 100px;
+        margin: auto;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.329);
+        transition: 0.2s;
+    }
+
+    #header-cover.on {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.329);
+    }
+
+    #header {
+        position: fixed;
+        width: calc(100% - 350px);
+        height: 100px;
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.329) inset;
+        transition: 0.2s;
+    }
+
+    #header.on {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.329) inset;
+    }
+    
+    #search-form {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #search-field {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 8;
+        background-color: #3333330c;
+    }
+
+    #search-field-input {
+        width: 80%;
+        border: 0;
+        border-bottom: 3px solid #FF4D4D;
+        padding: 0 1%;
+        font-size: 130%;
+        background: rgba(255, 255, 255, 0);
+        transition: 0.2s;
+    }
+
+    #search-field-input:focus {
+        width: 90%;
+        border-bottom: 1px solid #FF4D4D;
+        box-shadow: 0 1px 5px #FF4D4D;
+    }
+
+    #search-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 2;
+    }
+/* 검색-끝 */
+    
+/* 메일 리스트 */
+    #provider {
+        margin-top: 110px;
+    }
+
+    #provider-in {
+        margin: 20px;
+    }
+
+    .mail-title {
+        width: 60%;
+    }
+    .sender {
+        width: 25%;
+    }
+    .DNT {
+        width: 15%;
+    }
+/* 메일 리스트-끝 */
+
+/* 메일 쓰기 */
+
+    #button-bundle {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .button {
+        display: inline-block;
+        margin: 10px;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        background-color: #FF4D4D;
+    }
+/* 메일 쓰기-끝 */
+
+/* 공통 */
+    .container-out {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-in{
+        display: table-cell;
+        vertical-align: middle;
+    }
+/* 공통-끝 */

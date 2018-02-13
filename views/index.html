@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email</title>
+    <link rel="stylesheet" href="../public/stylesheets/main.css">
+    <script src="../public/javascripts/main.js"></script>
+</head>
+<body>
+    <!-- 아이언맨의 왼손은? -->
+    <!-- 스타크래프트 -->
+
+    <nav>
+        <div id="logo">
+            로고입니당~
+            <img src="../public/images/logo.png">
+        </div>
+        <div id="profile">
+            <div class="container-out">
+                <div class="container-in">
+                    <% user.name %>님 환영합니다!
+                </div>
+            </div>
+        </div>
+        <div class="nav-button">
+            <div class="container-out">
+                <div class="container-in">
+                    받은메일함
+                </div>
+            </div>
+        </div>
+        <div class="nav-button">
+            <div class="container-out">
+                <div class="container-in">
+                    보낸메일함
+                </div>
+            </div>
+        </div>
+        <div class="nav-button">
+            <div class="container-out">
+                <div class="container-in">
+                    임시 보관함
+                </div>
+            </div>
+        </div>
+        <div class="nav-button">
+            <div class="container-out">
+                <div class="container-in">
+                    메일쓰기
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="container">
+    </div>
+
+    <div id="main">
+        <div id="header-cover">
+            <div id="header" class="asdf">
+                <form id="search-form" action="@@@@@" method="get">
+                    <div id="search-field">
+                        <input id="search-field-input" name="@@@@@" placeholder="검색" type="search" autocomplete="no">
+                    </div>
+                    <div id="search-button">
+                        <input id="search-button-input" type="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="provider">
+            <div id="provider-in">
+                <table>
+                    <tr class="mail-table">
+                        <th class="mail-title"><i>메일 제목</i></th>
+                        <th class="sender"><i>보낸 사람</i></th>
+                        <th class="DNT"><i>일시</i></th>
+                    </tr>
+<!-- 
+                    <tr>
+                        <td>asdf</td>
+                        <td>asdf</td>
+                        <td>asdf</td>
+                    </tr>
+-->
+
+                    <% for (var i = 0; i < @@@@@.length; i++) { %>
+                        <tr>
+                            <td><%= @@@@@.i %></td>    <!-- (메일 제목).i -->
+                            <td><%= @@@@@.i %></td>    <!-- (보낸 사람).i -->
+                            <td><%= @@@@@.i %></td>    <!-- (일시).i -->
+                        </tr>
+                    <% } %>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
