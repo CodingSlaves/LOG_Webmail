@@ -161,14 +161,24 @@ table {
         margin: 20px;
     }
 
+    .bold-border {
+    }
+
     .mail-title {
         width: 60%;
     }
-    .sender {
+    .mail-sender {
         width: 25%;
     }
-    .DNT {
+    .mail-DNT {
         width: 15%;
+    }
+    
+    .mail-list-top {
+        border-bottom: 3px solid #FF4D4D;
+    }
+    .mail-lists {
+        border-bottom: 1px solid #FF4D4D;
     }
 /* 메일 리스트-끝 */
 
