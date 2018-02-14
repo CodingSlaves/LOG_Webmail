@@ -149,6 +149,10 @@ table {
         justify-content: center;
         flex: 2;
     }
+
+    #search-button-input {
+        
+    }
 /* 검색-끝 */
     
 /* 메일 리스트 */
