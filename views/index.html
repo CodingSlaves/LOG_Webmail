@@ -24,34 +24,34 @@
                 </div>
             </div>
         </div>
-        <div class="nav-button">
+        <a class="nav-button" href="index.html" title="받은메일함">
             <div class="container-out">
                 <div class="container-in">
                     받은메일함
                 </div>
             </div>
-        </div>
-        <div class="nav-button">
+        </a>
+        <a class="nav-button" href="@@@@@" title="보낸메일함">
             <div class="container-out">
                 <div class="container-in">
                     보낸메일함
                 </div>
             </div>
-        </div>
-        <div class="nav-button">
+        </a>
+        <a class="nav-button" href="@@@@@" title="임시 보관함">
             <div class="container-out">
                 <div class="container-in">
                     임시 보관함
                 </div>
             </div>
-        </div>
-        <div class="nav-button">
+        </a>
+        <a class="nav-button" href="mail-write.html" title="메일쓰기">
             <div class="container-out">
                 <div class="container-in">
                     메일쓰기
                 </div>
             </div>
-        </div>
+        </a>
     </nav>
 
     <div id="container">
@@ -73,10 +73,10 @@
         <div id="provider">
             <div id="provider-in">
                 <table>
-                    <tr class="mail-table">
-                        <th class="mail-title"><i>메일 제목</i></th>
-                        <th class="sender"><i>보낸 사람</i></th>
-                        <th class="DNT"><i>일시</i></th>
+                    <tr class="bold-border">
+                        <th class="mail-title mail-list-top"><i>메일 제목</i></th>
+                        <th class="mail-sender mail-list-top"><i>보낸 사람</i></th>
+                        <th class="mail-DNT mail-list-top"><i>일시</i></th>
                     </tr>
 <!-- 
                     <tr>
@@ -88,9 +88,9 @@
 
                     <% for (var i = 0; i < @@@@@.length; i++) { %>
                         <tr>
-                            <td><%= @@@@@.i %></td>    <!-- (메일 제목).i -->
-                            <td><%= @@@@@.i %></td>    <!-- (보낸 사람).i -->
-                            <td><%= @@@@@.i %></td>    <!-- (일시).i -->
+                            <td class="mail-lists"><%= @@@@@.i %></td>    <!-- (메일 제목).i -->
+                            <td class="mail-lists"><%= @@@@@.i %></td>    <!-- (보낸 사람).i -->
+                            <td class="mail-lists"><%= @@@@@.i %></td>    <!-- (일시).i -->
                         </tr>
                     <% } %>
                 </table>
