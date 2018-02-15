@@ -27,8 +27,10 @@ app.use(logger());
 app.use(render);
 app.use(morgan('dev',{stream : accessLogStream}));
 //route
-router.get('/',index);
-
+router.get('/',index.recieve)
+    .get('/send',index.send)
+    .post('/send')
+    .get('/temp');
 app.use(router.routes());
 app.use(router.allowedMethods());
 
