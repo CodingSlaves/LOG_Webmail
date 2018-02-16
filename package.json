@@ -14,5 +14,8 @@
     "mongoose": "^5.0.3",
     "nodemailer": "^4.4.2",
     "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "node app.js"
   }
 }

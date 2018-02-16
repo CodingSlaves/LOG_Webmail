@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Email</title>
 
-    <!-- <link rel="stylesheet" href="stylesheets/main.css"> -->
-    <link rel="stylesheet" href="../public/stylesheets/main.css">
+    <!-- 내부 css -->
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <!-- <link rel="stylesheet" href="../public/stylesheets/main.css"> -->
 
-    <link href="https://cdn.quilljs.com/1.3.5/quill.snow.css" rel="stylesheet">
-    <script src="https://cdn.quilljs.com/1.3.5/quill.js"></script>
+    <!-- 외부 js -->
+    <!-- <link href="https://cdn.quilljs.com/1.3.5/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.5/quill.js"></script> -->
 
-    <!-- <script src="scripts/main.js"></script> -->
-    <script src="../public/scripts/main.js"></script>
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
+
+    <!-- 내부 js -->
+    <script src="scripts/main.js"></script>
+    <!-- <script src="../public/scripts/main.js"></script> -->
 
 </head>
 <body>

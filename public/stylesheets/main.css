@@ -219,6 +219,14 @@ table {
     }
 /* 메일 쓰기-끝 */
 
+/* 404 */
+    #shrug {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+/* 404-끝 */
+
 /* 공통 */
     .container-out {
         display: table;
