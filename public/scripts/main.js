@@ -11,4 +11,10 @@ onload = function () {
             headerCover.classList.remove('on');
         }
     });
+
+    
+    var quill = new Quill('#editor', {
+        theme: 'snow'
+    });
+    
 };
