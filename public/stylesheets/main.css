@@ -227,10 +227,17 @@ table {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
     }
 /* 404-끝 */
 
 /* 공통 */
+    .very-big-font {
+        font-size: 1600%;
+    }
+
     .container-out {
         display: table;
         width: 100%;
