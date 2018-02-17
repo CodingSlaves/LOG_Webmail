@@ -28,10 +28,12 @@ table {
         width: var(--nav-width);
         height: 100%;
         color: #ffffff;
-        background-color: rgb(255, 153, 94);
+        font-size: large;
+        /* background-color: rgb(255, 153, 94); */
+        background-image: url(../images/orange-polygon.jpg);
+        background-size: cover;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
     }
-
     #logo {
         box-sizing: border-box;
         width: 100%;
@@ -56,10 +58,11 @@ table {
         border-right: 13px dotted rgba(255, 77, 77, 0);
         padding-left: 15%;
         padding-right: 10%;
-        font-size: medium;
+        font-size: large;
         color: #ffffff;
         text-decoration:none;
-        background-color: rgb(255, 153, 94);
+        /* background-color: rgb(255, 153, 94); */
+        background-color: rgba(255, 130, 57, 0);
         box-shadow: 0 0 0 rgba(0, 0, 0, 0.329) inset;
         transition: 0.2s;
     }
@@ -68,7 +71,7 @@ table {
         width: 105%;
         height: 75px;
         padding-left: 50%;
-        background-color: rgb(255, 130, 57);
+        background-color: rgb(219, 33, 33);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.329);
     }
 /* 네비게이션-끝 */
