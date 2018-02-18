@@ -15,8 +15,8 @@ const app = module.exports = new koa();
 const router = new Router();
 //config
 const serverOption = {
-    key : fs.readFileSync('../key.pem'),
-    cert: fs.readFileSync('../cert.pem')
+    key : fs.readFileSync('./key.pem'),
+    cert: fs.readFileSync('./cert.pem')
 };
 const accessLogStream = fs.createWriteStream(__dirname + '/access.log',
     { flags: 'a' });
@@ -31,8 +31,13 @@ router.get('/',index.recieve)
     .get('/send',index.send)
     .post('/send')
     .get('/temp');
+
+
 app.use(router.routes());
 app.use(router.allowedMethods());
-
+app.use(async ctx=>{
+    ctx.status = 404;
+    ctx.render('404.html');
+});
 const server = http2.createSecureServer(serverOption,app.callback());
-server.listen(443);
+server.listen(3000);
