@@ -243,8 +243,8 @@ table {
     }
 
     #login-tap-bg {
-        float: right;
-        width: 300px;
+        margin-left: auto;
+        width: 50%;
         height: 100%;
     }
     #join-tap-bg {
