@@ -244,11 +244,34 @@ table {
 
     #login-tap-bg {
         margin-left: auto;
-        width: 50%;
-        height: 100%;
+        flex: initial;
+        display: flex;
+        width: 60%;
+        overflow: hidden;
     }
     #join-tap-bg {
-        width: 300px;
+        margin-right: auto;
+        flex: initial;
+        width: 60%;
+        overflow: hidden;
+    }
+
+    .login-text {
+        flex: 7;
+    }
+    .login-submit {
+        flex: 3;
+    }
+
+    .login-input {
+        width: 80%;
+        margin: 1% 0;
+        padding: 2%;
+        font-size: large;
+    }
+
+    .login-submit-button {
+        width: 100%;
         height: 100%;
     }
 /* 로그인-끝 */
