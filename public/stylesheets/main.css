@@ -230,7 +230,12 @@ input {
     #login-box {
         width: 100%;
         margin: 30px 15%;
-        background-color: #f7f7f7;
+        border-top: 5px dashed #b1b1b1;
+        border-right: 5px dashed #b1b1b1;
+        border-bottom: 5px dashed #b1b1b1;
+        border-left: 10px solid rgb(102, 102, 102);
+        /* background-color: #f7f7f7; */
+        background-image: url(../images/whitegray-hexagon.png);
     }
 
     #login-tap {
@@ -241,11 +246,10 @@ input {
     }
     #join-tap {
         width: 720px;
-        height: 100px;
+        height: 150px;
         margin: 5% auto;
         padding: 0 40px;
     }
-
     #login-tap-bg {
         margin-left: auto;
         flex: initial;
@@ -255,6 +259,7 @@ input {
     #join-tap-bg {
         margin-right: auto;
         flex: initial;
+        display: flex;
         width: 70%;
     }
 
@@ -273,7 +278,7 @@ input {
         margin: 1% 0 0;
         border-top: 0 solid rgba(0, 0, 0, 0);
         border-right: 5px solid rgba(0, 0, 0, 0);
-        border-bottom: 5px solid rgb(212, 212, 212);
+        border-bottom: 5px solid #b1b1b1;
         border-left: 5px solid rgba(0, 0, 0, 0);
         padding: 2%;
         font-size: large;
@@ -285,19 +290,27 @@ input {
         margin: 0 0 1%;
         border-top: 2px solid rgba(0, 0, 0, 0);
         border-right: 0 solid rgba(0, 0, 0, 0);
-        border-bottom: 3px solid rgb(212, 212, 212);
+        border-bottom: 3px solid #b1b1b1;
         border-left: 0 solid rgba(0, 0, 0, 0);
         box-shadow: 0px 5px 6px rgb(148, 148, 148);
     }
 
     .login-submit-button {
         flex: 1;
-        height: 70%;
-        margin: 5px 0 0;
+        height: 60%;
+        margin: 20px 15px 0;
+        border-top: 0 solid;
+        border-right: 0 solid;
+        border-bottom: 5px solid #b1b1b1;
+        border-left: 0 solid;
+        border-radius: 10px;
+        /* border-top-left-radius: 0; */
+        /* border-bottom-left-radius: 0; */
+        border-bottom-right-radius: 0;
         transition: 0.2s;
     }
     .login-submit-button:hover {
-        margin: 0 0 5px;
+        margin: 15px 15px 5px;
         box-shadow: 0 5px 6px rgb(148, 148, 148);
     }
 /* 로그인-끝 */
