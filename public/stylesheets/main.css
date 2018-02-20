@@ -243,12 +243,20 @@ input {
         height: 100px;
         margin: 5% auto;
         padding: 0 40px;
+        background-image: url(../images/login.svg);
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: left center;
     }
     #join-tap {
         width: 720px;
         height: 150px;
         margin: 5% auto;
         padding: 0 40px;
+        background-image: url(../images/join.svg);
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: right center;
     }
     #login-tap-bg {
         margin-left: auto;
