@@ -229,7 +229,7 @@ input {
 /* 로그인 */
     #login-box {
         width: 100%;
-        margin: 30px 15%;
+        margin: 30px 0;
         border-top: 5px dashed #b1b1b1;
         border-right: 5px dashed #b1b1b1;
         border-bottom: 5px dashed #b1b1b1;
