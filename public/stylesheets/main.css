@@ -247,13 +247,11 @@ table {
         flex: initial;
         display: flex;
         width: 70%;
-        overflow: hidden;
     }
     #join-tap-bg {
         margin-right: auto;
         flex: initial;
         width: 70%;
-        overflow: hidden;
     }
 
     .login-text {
@@ -268,7 +266,7 @@ table {
 
     .login-input {
         width: 80%;
-        margin: 1% 0;
+        margin: 1% 0 0 1%;
         border-top: 0 solid rgba(0, 0, 0, 0);
         border-right: 5px solid rgba(0, 0, 0, 0);
         border-bottom: 5px solid rgb(212, 212, 212);
@@ -279,12 +277,13 @@ table {
         transition: 0.2s;
     }
     .login-input:focus {
-        width: 90%;
+        width: 85%;
+        margin: 0 1% 1% 0;
         border-top: 2px solid rgba(0, 0, 0, 0);
         border-right: 0 solid rgba(0, 0, 0, 0);
         border-bottom: 3px solid rgb(212, 212, 212);
         border-left: 0 solid rgba(0, 0, 0, 0);
-        box-shadow: 0 0 4px rgb(148, 148, 148); 
+        box-shadow: 2px 5px 3px rgb(148, 148, 148); 
     }
 
     .login-submit-button {
