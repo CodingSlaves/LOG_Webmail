@@ -2,6 +2,7 @@
 
 :root {
     --nav-width: 300px;
+    --nav-height: 80px;
 }
 
 html, body {
@@ -84,15 +85,19 @@ input {
     .logout {
         border: 0;
         text-align: left;
+/* 
         background-image: url(../images/logout.svg);
         background-size: 50px;
         background-repeat: no-repeat;
         background-position: center center;
+*/
         transition: 0.5s;
     }
     .logout:hover {
+/* 
         background-size: 75px;
         background-position: left center;
+*/
     }
 /* 네비게이션-끝 */
 
@@ -116,7 +121,7 @@ input {
     #header-cover {
         position: fixed;
         width: calc(100% - var(--nav-width));
-        height: 100px;
+        height: var(--nav-height);
         margin: auto;
         box-shadow: 0 0 0 rgba(0, 0, 0, 0.329);
         transition: 0.2s;
@@ -129,7 +134,7 @@ input {
     #header {
         position: fixed;
         width: calc(100% - var(--nav-width));
-        height: 100px;
+        height: var(--nav-height);
         margin: auto;
         background-image: url(../images/orange-polygon.png);
         box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.329) inset;
@@ -241,6 +246,9 @@ input {
     }
     td {
         border: 0;
+    }
+    tr {
+        height: 42px;
     }
     tr:nth-child(even) {
         background-color: rgba(255, 181, 83, 0.616);
