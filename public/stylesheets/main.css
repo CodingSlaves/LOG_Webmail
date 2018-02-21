@@ -80,6 +80,20 @@ input {
         background-color: rgb(255, 181, 83);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.329);
     }
+
+    .logout {
+        border: 0;
+        text-align: left;
+        background-image: url(../images/logout.svg);
+        background-size: 75px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        transition: 0.5s;
+    }
+    .logout:hover {
+        background-size: 100px;
+        background-position: left center;
+    }
 /* 네비게이션-끝 */
 
 /* 컨테이너 */
