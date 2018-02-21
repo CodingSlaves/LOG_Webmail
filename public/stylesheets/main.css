@@ -244,12 +244,6 @@ input {
         border-left: 3px solid rgba(0, 0, 0, 0);
         padding: 10px 0;
     }
-    td {
-        border: 0;
-    }
-    tr {
-        height: 42px;
-    }
     tr:nth-child(even) {
         background-color: rgba(255, 181, 83, 0.616);
     }
