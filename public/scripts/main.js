@@ -16,7 +16,9 @@ onload = function () {
     var searchFieldInput = document.querySelector(".search-field-input")
 
     if ( querySelector.value('searchFieldInput') == 1 ) {
-        
+        // 문자열 찾아내서 정렬까지 시켜야함.
+        // 아마도 찾아낸 문자열을 제외한 나머지 항목들에게 안보이게 하는 display: none; 같은걸 걸어서
+        // 정렬시켜야 할 것 같음.
     }
 
 
