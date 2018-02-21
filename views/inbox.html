@@ -7,8 +7,8 @@
     <title>Email</title>
 
     <!-- 내부 css -->
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <!-- <link rel="stylesheet" href="../public/stylesheets/main.css"> -->
+    <!-- <link rel="stylesheet" href="stylesheets/main.css"> -->
+    <link rel="stylesheet" href="../public/stylesheets/main.css">
 
     <!-- 외부 js -->
     <!-- <link href="https://cdn.quilljs.com/1.3.5/quill.snow.css" rel="stylesheet">
@@ -18,8 +18,8 @@
     <script>tinymce.init({ selector:'textarea' });</script>
 
     <!-- 내부 js -->
-    <script src="scripts/main.js"></script>
-    <!-- <script src="../public/scripts/main.js"></script> -->
+    <!-- <script src="scripts/main.js"></script> -->
+    <script src="../public/scripts/main.js"></script>
 
 </head>
 <!-- 아이언맨의 왼손은? -->
@@ -28,8 +28,6 @@
 
     <nav>
         <div id="logo">
-            로고입니당~
-            <img src="../public/images/logo.png">
         </div>
         <div id="profile">
             <div class="container-out">
@@ -38,34 +36,40 @@
                 </div>
             </div>
         </div>
-        <a class="nav-button" href="/" title="받은메일함">
+        <a class="nav-button" href="/inbox" title="받은 메일함">
             <div class="container-out">
                 <div class="container-in">
-                    받은메일함
+                    받은 메일함
                 </div>
             </div>
         </a>
-        <a class="nav-button" href="@@@@@" title="보낸메일함">
+        <a class="nav-button" href="/sent-mail" title="보낸 메일함">
             <div class="container-out">
                 <div class="container-in">
-                    보낸메일함
+                    보낸 메일함
                 </div>
             </div>
         </a>
-        <a class="nav-button" href="@@@@@" title="임시 보관함">
+        <a class="nav-button" href="/deposit" title="임시 보관함">
             <div class="container-out">
                 <div class="container-in">
                     임시 보관함
                 </div>
             </div>
         </a>
-        <a class="nav-button" href="/send" title="메일쓰기">
+        <a class="nav-button" href="/send" title="메일 쓰기">
             <div class="container-out">
                 <div class="container-in">
-                    메일쓰기
+                    메일 쓰기
                 </div>
             </div>
         </a>
+        <input class="nav-button logout" type="submit" formaction="/logout" method="post" value="로그아웃">
+            <div class="container-out">
+                <div class="container-in">
+                </div>
+            </div>
+        </input>
     </nav>
 
     <div id="container">
@@ -79,34 +83,44 @@
                         <input id="search-field-input" name="@@@@@" placeholder="검색" type="search" autocomplete="no">
                     </div>
                     <div id="search-button">
-                        <input id="search-button-input" type="submit">
+                        <input id="search-button-input" type="submit" value="검색">
                     </div>
                 </form>
             </div>
         </div>
         <div id="provider">
             <div id="provider-in">
+                    <span class="big-font"><span class="log-color">받은</span> 메일함</span><br>
                 <table>
                     <tr class="bold-border">
                         <th class="mail-title mail-list-top"><i>메일 제목</i></th>
                         <th class="mail-sender mail-list-top"><i>보낸 사람</i></th>
                         <th class="mail-DNT mail-list-top"><i>일시</i></th>
                     </tr>
-<!-- 
-                    <tr>
-                        <td>asdf</td>
-                        <td>asdf</td>
-                        <td>asdf</td>
-                    </tr>
--->
-
-                    <% for (var i = @@@@@.length; i > 0; --i) { %>
+                    <% for (var mail of mails) { %>
                         <tr>
-                            <td class="mail-lists"><%= @@@@@.i %></td>    <!-- (메일 제목).i -->
-                            <td class="mail-lists"><%= @@@@@.i %></td>    <!-- (보낸 사람).i -->
-                            <td class="mail-lists"><%= @@@@@.i %></td>    <!-- (일시).i -->
+                            <div class="mail-lists-tr">
+                                <td class="mail-lists">
+                                    <a class="" href="<%= mail._id %>" title="<%= mail.title %>"><%= mail.title %></a>    <!-- 메일 제목 -->
+                                </td>    
+                                <td class="mail-lists"><%= mail.from %></td>    <!-- 보낸 사람 -->
+                                <td class="mail-lists"><%= mail.date %></td>    <!-- 일시 -->
+                            </div>
                         </tr>
+
+<!-- 
+                        <tr>
+                            <div class="mail-lists-tr">
+                                <td class="mail-lists">
+                                    <a class="" href="asdf" title="이 메일은 테스트용 입니다">이 메일은 테스트용 입니다</a>
+                                </td>    
+                                <td class="mail-lists">gjdprtm@naver.com</td>
+                                <td class="mail-lists">2018. 2. 21</td>
+                            </div>
+                        </tr>
+-->
                     <% } %>
+
                 </table>
             </div>
         </div>
