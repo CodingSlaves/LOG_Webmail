@@ -210,10 +210,16 @@ input {
     }
     
     .mail-list-top {
-        border-bottom: 3px solid #FF4D4D;
+        border-top: 0;
+        border-right: 5px solid rgba(0, 0, 0, 0);
+        border-bottom: 5px solid rgb(255, 181, 83);
+        border-left: 5px solid rgba(0, 0, 0, 0);
     }
     .mail-lists {
-        border-bottom: 1px solid #FF4D4D;
+        border-top: 10px solid rgba(0, 0, 0, 0);
+        border-right: 3px solid rgba(0, 0, 0, 0);
+        border-bottom: 3px solid rgb(255, 181, 83);
+        border-left: 3px solid rgba(0, 0, 0, 0);
     }
 /* 메일 리스트-끝 */
 
