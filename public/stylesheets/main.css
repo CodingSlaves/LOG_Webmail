@@ -235,15 +235,33 @@ input {
 
     .button {
         display: inline-block;
-        margin: 10px;
-        border: none;
-        padding: 15px 32px;
-        text-align: center;
+        width: 120px;
+        height: 60px;
+        margin: 13px 10px 10px;
+        border: 0;
+        border-bottom: 5px solid #b1b1b1;
         font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-        background-color: #FF4D4D;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 #ffffff;
+        transition: 0.2s;
+    }
+    .button:hover {
+        margin: 8px 10px 15px;
+        background: #e0e0e0;
+        border-bottom: 5px solid #ffffff;
+        box-shadow: 0 5px 6px #ffffff;
+    }
+
+    .send-button {
+        border-bottom-right-radius: 20px;
+    }
+    .preview-button {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .save-button {
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 /* 메일 쓰기-끝 */
 
