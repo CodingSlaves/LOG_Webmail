@@ -64,12 +64,14 @@
                 </div>
             </div>
         </a>
-        <input class="nav-button logout" type="submit" formaction="/logout" method="post" value="로그아웃">
-            <div class="container-out">
-                <div class="container-in">
+        <form action="/logout" method="post">
+            <input class="nav-button logout" type="submit" name="logout" value="로그아웃">
+                <div class="container-out">
+                    <div class="container-in">
+                    </div>
                 </div>
-            </div>
-        </input>
+            </input>
+        </form>
     </nav>
 
     <div id="container">
@@ -108,7 +110,7 @@
                             </div>
                         </tr>
 
-<!-- 
+
                         <tr>
                             <div class="mail-lists-tr">
                                 <td class="mail-lists">
@@ -118,7 +120,7 @@
                                 <td class="mail-lists">2018. 2. 21</td>
                             </div>
                         </tr>
--->
+
                     <% } %>
 
                 </table>
