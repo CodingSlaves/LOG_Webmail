@@ -12,7 +12,16 @@ onload = function () {
         }
     });
 
-    
+    var mailTitle = document.querySelectorAll(".mail-lists");
+    var searchFieldInput = document.querySelector(".search-field-input")
+
+    if ( querySelector.value('searchFieldInput') == 1 ) {
+        
+    }
+
+
+
+
     // var quill = new Quill('#editor', {
     //     theme: 'snow'
     // });
