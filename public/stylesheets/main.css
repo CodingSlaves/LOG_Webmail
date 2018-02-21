@@ -20,6 +20,10 @@ table {
     text-align: center;
 }
 
+input {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 /* 네비게이션 */
     nav {
         flex: none;
@@ -39,6 +43,8 @@ table {
         width: 100%;
         height: 90px;
         margin: auto;
+        background-image: url(../images/logo.png);
+        background-size: 100%;
     }
 
     #profile {
@@ -71,7 +77,7 @@ table {
         width: 105%;
         height: 75px;
         padding-left: 50%;
-        background-color: rgb(219, 33, 33);
+        background-color: rgb(255, 181, 83);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.329);
     }
 /* 네비게이션-끝 */
@@ -111,7 +117,7 @@ table {
         width: calc(100% - var(--nav-width));
         height: 100px;
         margin: auto;
-        background-color: #ffffff;
+        background-image: url(../images/orange-polygon.png);
         box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.329) inset;
         transition: 0.2s;
     }
@@ -131,46 +137,62 @@ table {
         align-items: center;
         justify-content: center;
         flex: 8;
-        background-color: #3333330c;
     }
 
     #search-field-input {
         width: 80%;
         border: 0;
-        border-bottom: 3px solid #FF4D4D;
+        border-top: 0 solid rgba(0, 0, 0, 0);
+        border-right: 5px solid rgba(0, 0, 0, 0);
+        border-bottom: 5px solid #ffffff;
+        border-left: 5px solid rgba(0, 0, 0, 0);
         padding: 0 1%;
         font-size: 130%;
         background: rgba(255, 255, 255, 0);
+        border-top-right-radius: 20px;
         transition: 0.2s;
     }
 
     #search-field-input:focus {
         width: 90%;
-        border-bottom: 1px solid #FF4D4D;
-        box-shadow: 0 1px 5px #FF4D4D;
+        border-top: 2px solid rgba(0, 0, 0, 0);
+        border-right: 10px solid rgba(0, 0, 0, 0);
+        border-bottom: 3px solid #ffffff;
+        border-left: 10px solid rgba(0, 0, 0, 0);
+        background: rgba(255, 255, 255, 0.616);
+        box-shadow: 0 1px 5px #ffffff;
     }
 
     #search-button {
         display: flex;
         align-items: center;
-        justify-content: center;
         flex: 2;
     }
 
     #search-button-input {
         height: 60px;
-        width: 100%;
-        margin-left: 50px;
+        width: 120px;
+        margin-top: 5px;
+        border: 0;
+        border-bottom: 5px solid #b1b1b1;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 0 #9e9e9e;
         transition: 0.2s;
     }
     #search-button-input:hover {
-        margin-left: 0;
+        margin-top: 0;
+        border-bottom: 5px solid #ffffff;
+        background: #e0e0e0;
+        box-shadow: 0 5px 6px #ffffff;
     }
 /* 검색-끝 */
     
 /* 메일 리스트 */
     #provider {
-        margin-top: 110px;
+        min-width: 900px;
+        margin: 140px 0 0;
     }
 
     #provider-in {
@@ -191,14 +213,23 @@ table {
     }
     
     .mail-list-top {
-        border-bottom: 3px solid #FF4D4D;
+        border-top: 0;
+        border-right: 5px solid rgba(0, 0, 0, 0);
+        border-bottom: 5px solid rgb(255, 181, 83);
+        border-left: 5px solid rgba(0, 0, 0, 0);
     }
     .mail-lists {
-        border-bottom: 1px solid #FF4D4D;
+        border-top: 0 solid rgba(0, 0, 0, 0);
+        border-right: 3px solid rgba(0, 0, 0, 0);
+        border-bottom: 3px solid rgb(255, 181, 83);
+        border-left: 3px solid rgba(0, 0, 0, 0);
+        padding: 10px 0;
     }
 /* 메일 리스트-끝 */
 
 /* 메일 쓰기 */
+    
+
     .mail-write-form {
     }
 
@@ -210,17 +241,158 @@ table {
 
     .button {
         display: inline-block;
-        margin: 10px;
-        border: none;
-        padding: 15px 32px;
-        text-align: center;
+        width: 120px;
+        height: 60px;
+        margin: 13px 10px 10px;
+        border: 0;
+        border-bottom: 5px solid #b1b1b1;
         font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-        background-color: #FF4D4D;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 #ffffff;
+        transition: 0.2s;
+    }
+    .button:hover {
+        margin: 8px 10px 15px;
+        background: #e0e0e0;
+        border-bottom: 5px solid #ffffff;
+        box-shadow: 0 5px 6px #ffffff;
+    }
+
+    .send-button {
+        border-bottom-right-radius: 20px;
+    }
+    .preview-button {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .save-button {
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .letter-text {
+        width: 40%;
+        border-top: 0px solid rgba(0, 0, 0, 0);
+        border-right: 5px solid rgba(0, 0, 0, 0);
+        border-bottom: 5px solid rgb(255, 127, 52);
+        border-left: 5px solid rgba(0, 0, 0, 0);
+        font-size: large;
+        transition: 0.2s;
+    }
+    .letter-text:focus {
+        width: 80%;
+        border-top: 0px solid rgba(0, 0, 0, 0);
+        border-right: 50px solid rgba(0, 0, 0, 0);
+        border-bottom: 5px solid rgb(255, 181, 83);
+        border-left: 5px solid rgba(0, 0, 0, 0);
+        background: rgba(255, 181, 83, 0.616);
+        border-top-right-radius: 20px;
+        box-shadow: 0 2px 6px #FF4D4D;
+    }
+    
+    .letter-recipient {
+    }
+    .letter-title {
     }
 /* 메일 쓰기-끝 */
+
+/* 로그인 */
+    #login-box {
+        width: 100%;
+        margin: 30px 0;
+        border-top: 5px dashed #b1b1b1;
+        border-right: 5px dashed #b1b1b1;
+        border-bottom: 5px dashed #b1b1b1;
+        border-left: 10px solid rgb(102, 102, 102);
+        /* background-color: #f7f7f7; */
+        background-image: url(../images/whitegray-hexagon.png);
+    }
+
+    #login-tap {
+        width: 720px;
+        height: 100px;
+        margin: 5% auto;
+        padding: 0 40px;
+        background-image: url(../images/login.svg);
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    #join-tap {
+        width: 720px;
+        height: 150px;
+        margin: 5% auto;
+        padding: 0 40px;
+        background-image: url(../images/join.svg);
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+    #login-tap-bg {
+        margin-left: auto;
+        flex: initial;
+        display: flex;
+        width: 70%;
+    }
+    #join-tap-bg {
+        margin-right: auto;
+        flex: initial;
+        display: flex;
+        width: 70%;
+    }
+
+    .login-text {
+        flex: 9;
+    }
+    .login-submit {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-input {
+        width: 80%;
+        margin: 1% 0 0;
+        border-top: 0 solid rgba(0, 0, 0, 0);
+        border-right: 5px solid rgba(0, 0, 0, 0);
+        border-bottom: 5px solid #b1b1b1;
+        border-left: 5px solid rgba(0, 0, 0, 0);
+        padding: 2%;
+        font-size: large;
+        background: rgba(0, 0, 0, 0);
+        transition: 0.2s;
+    }
+    .login-input:focus {
+        width: 85%;
+        margin: 0 0 1%;
+        border-top: 2px solid rgba(0, 0, 0, 0);
+        border-right: 0 solid rgba(0, 0, 0, 0);
+        border-bottom: 3px solid #b1b1b1;
+        border-left: 0 solid rgba(0, 0, 0, 0);
+        box-shadow: 0px 5px 6px rgb(148, 148, 148);
+    }
+
+    .login-submit-button {
+        flex: 1;
+        height: 60%;
+        margin: 20px 15px 0;
+        border-top: 0 solid;
+        border-right: 0 solid;
+        border-bottom: 5px solid #9e9e9e;
+        border-left: 0 solid;
+        border-radius: 10px;
+        /* border-top-left-radius: 0; */
+        /* border-bottom-left-radius: 0; */
+        border-bottom-right-radius: 0;
+        background: #d3d3d3;
+        transition: 0.2s;
+    }
+    .login-submit-button:hover {
+        margin: 15px 15px 5px;
+        box-shadow: 0 5px 6px rgb(148, 148, 148);
+    }
+/* 로그인-끝 */
 
 /* 404 */
     #shrug {
@@ -234,8 +406,33 @@ table {
 /* 404-끝 */
 
 /* 공통 */
-    .very-big-font {
+    .very-very-big-font {
         font-size: 1600%;
+    }
+
+    .big-font {
+        font-size: 200%;
+    }
+
+    .log-color {
+        color: rgb(255, 127, 52);
+    }
+
+    .wrap {
+        width: 100%;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-top-center {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
     }
 
     .container-out {

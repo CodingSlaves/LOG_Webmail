@@ -7,8 +7,8 @@
     <title>Email</title>
 
     <!-- 내부 css -->
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <!-- <link rel="stylesheet" href="../public/stylesheets/main.css"> -->
+    <!-- <link rel="stylesheet" href="stylesheets/main.css"> -->
+    <link rel="stylesheet" href="../public/stylesheets/main.css">
 
     <!-- 외부 js -->
     <!-- <link href="https://cdn.quilljs.com/1.3.5/quill.snow.css" rel="stylesheet">
@@ -18,8 +18,8 @@
     <script>tinymce.init({ selector:'textarea' });</script>
 
     <!-- 내부 js -->
-    <script src="scripts/main.js"></script>
-    <!-- <script src="../public/scripts/main.js"></script> -->
+    <!-- <script src="scripts/main.js"></script> -->
+    <script src="../public/scripts/main.js"></script>
 
 </head>
 <!-- 오류중학교를 영어로 하면? -->
@@ -28,8 +28,6 @@
 
     <nav>
         <div id="logo">
-            로고입니당~
-            <img src="../public/images/logo.png">
         </div>
         <div id="profile">
             <div class="container-out">
@@ -41,18 +39,18 @@
         <a class="nav-button" href="/" title="받은메일함">
             <div class="container-out">
                 <div class="container-in">
-                    받은메일함
+                    받은 메일함
                 </div>
             </div>
         </a>
-        <a class="nav-button" href="@@@@@" title="보낸메일함">
+        <a class="nav-button" href="/sent-mail" title="보낸메일함">
             <div class="container-out">
                 <div class="container-in">
-                    보낸메일함
+                    보낸 메일함
                 </div>
             </div>
         </a>
-        <a class="nav-button" href="@@@@@" title="임시 보관함">
+        <a class="nav-button" href="/deposit" title="임시 보관함">
             <div class="container-out">
                 <div class="container-in">
                     임시 보관함
@@ -62,7 +60,7 @@
         <a class="nav-button" href="/send" title="메일쓰기">
             <div class="container-out">
                 <div class="container-in">
-                    메일쓰기
+                    메일 쓰기
                 </div>
             </div>
         </a>
@@ -75,19 +73,23 @@
         <div id="header-cover">
             <div id="header" class="asdf">
                 <div id="button-bundle">
-                    <input class="button" type="submit" name="send" value="보내기" formaction="/@@@@@">
-                    <input class="button" type="submit" name="preview" value="미리보기" formaction="/@@@@@">
-                    <input class="button" type="submit" name="Save" value="임시저장" formaction="/@@@@@">
+                    <input class="button send-button" type="submit" name="send" value="보내기" formaction="/@@@@@">    <!-- 보내기 버튼 -->
+                    <input class="button preview-button" type="submit" name="preview" value="미리보기" formaction="/@@@@@">    <!-- 미리보기 버튼 -->
+                    <input class="button save-button" type="submit" name="save" value="임시저장" formaction="/@@@@@">    <!-- 임시저장 버튼 -->
                 </div>
             </div>
         </div>
         <div id="provider">
             <div id="provider-in">
                 <div id="letter">
-                    <input type="email" name="recipient">
-                    <input type="file" name="attachment">
-                    <input type="text" name="title">
-                    <textarea name="content" cols="30" rows="10"></textarea>
+                    <input class="letter-text letter-recipient" type="email" name="recipient" placeholder="받는 사람 E-MAIL">    <!-- 받는 사람 -->
+                    <br><br>
+                    <input class="letter-text letter-title" type="text" name="title" placeholder="제목">    <!-- 메일 제목 -->
+                    <br><br>
+                    첨부 파일<br>
+                    <input class="letter-attachment" type="file" name="attachment">    <!-- 첨부 파일 -->
+                    <br><br>
+                    <textarea name="content" rows="12"></textarea>    <!-- 본문 -->
                 </div>
             </div>
         </div>
