@@ -91,95 +91,30 @@
                         <th class="mail-sender mail-list-top"><i>보낸 사람</i></th>
                         <th class="mail-DNT mail-list-top"><i>일시</i></th>
                     </tr>
+                    <% for (var mail of mails) { %>
+                        <tr>
+                            <div class="mail-lists-tr">
+                                <td class="mail-lists">
+                                    <a class="" href="<%= mail._id %>" title="<%= mail.title %>"><%= mail.title %></a>    <!-- 메일 제목 -->
+                                </td>    
+                                <td class="mail-lists"><%= mail.from %></td>    <!-- 보낸 사람 -->
+                                <td class="mail-lists"><%= mail.date %></td>    <!-- 일시 -->
+                            </div>
+                        </tr>
+
 <!-- 
-                    <tr>
-                        <td class="mail-lists">asdf</td>
-                        <td class="mail-lists">asdf</td>
-                        <td class="mail-lists">asdf</td>
-                    </tr>
-
-                    <tr>
-                        <td class="mail-lists">asdf</td>
-                        <td class="mail-lists">asdf</td>
-                        <td class="mail-lists">asdf</td>
-                    </tr>
-
-                    <tr>
-                        <td class="mail-lists">asdf</td>
-                        <td class="mail-lists">asdf</td>
-                        <td class="mail-lists">asdf</td>
-                    </tr>
--->
-
-
-
-
-                    <!-- <% for (var mail of mails) { %> -->
                         <tr>
-                            <td class="mail-lists">
-                                <a class="" href="<%= mail._id %>" title="<%= ★★★★★.i %>"><%= mail.title %></a>    <!-- 메일 제목 -->
-                            </td>    
-                            <td class="mail-lists"><%= mail.from %></td>    <!-- 보낸 사람 -->
-                            <td class="mail-lists"><%= mail.date %></td>    <!-- 일시 -->
+                            <div class="mail-lists-tr">
+                                <td class="mail-lists">
+                                    <a class="" href="asdf" title="이 메일은 테스트용 입니다">이 메일은 테스트용 입니다</a>
+                                </td>    
+                                <td class="mail-lists">gjdprtm@naver.com</td>
+                                <td class="mail-lists">2018. 2. 21</td>
+                            </div>
                         </tr>
-
-
-                        <tr>
-                            <td class="mail-lists">
-                                <a class="" href="asdf" title="이 메일은 테스트용 입니다">이 메일은 테스트용 입니다</a>    <!-- (메일 제목).i -->
-                            </td>    
-                            <td class="mail-lists">gjdprtm@naver.com</td>    <!-- (보낸 사람).i -->
-                            <td class="mail-lists">2018. 2. 21</td>    <!-- (일시).i -->
-                        </tr>
-                    <!-- <% } %> -->
-
-
-<!--                     
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
-                    asdf<br>
 -->
+                    <% } %>
+
                 </table>
             </div>
         </div>

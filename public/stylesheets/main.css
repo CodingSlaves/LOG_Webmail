@@ -221,9 +221,15 @@ input {
     .mail-lists {
         border-top: 0 solid rgba(0, 0, 0, 0);
         border-right: 3px solid rgba(0, 0, 0, 0);
-        border-bottom: 3px solid rgb(255, 181, 83);
+        /* border-bottom: 3px solid rgb(255, 181, 83); */
         border-left: 3px solid rgba(0, 0, 0, 0);
         padding: 10px 0;
+    }
+    td {
+        border: 0;
+    }
+    tr:nth-child(even) {
+        background-color: rgba(255, 181, 83, 0.616);
     }
 /* 메일 리스트-끝 */
 
