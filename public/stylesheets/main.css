@@ -221,11 +221,14 @@ input {
     .bold-border {
     }
 
+    .mail-del {
+        width: 5%;
+    }
     .mail-title {
         width: 60%;
     }
     .mail-sender {
-        width: 25%;
+        width: 20%;
     }
     .mail-DNT {
         width: 15%;
@@ -243,12 +246,6 @@ input {
         /* border-bottom: 3px solid rgb(255, 181, 83); */
         border-left: 3px solid rgba(0, 0, 0, 0);
         padding: 10px 0;
-    }
-    td {
-        border: 0;
-    }
-    tr {
-        height: 42px;
     }
     tr:nth-child(even) {
         background-color: rgba(255, 181, 83, 0.616);
