@@ -21,8 +21,24 @@ const serverOption = {
 };
 const accessLogStream = fs.createWriteStream(__dirname + '/access.log',
     { flags: 'a' });
+const dbConfig  ={
+    MONGO_URI : "mongodb://localhost:27017/mail"
+};
+const sessConfig = {
+    key: 'koa:sess',
+    maxAge: 86400000
+};
+db.Promise = global.Promise;
+//use middleware\
+db.connect(dbConfig)
+    .then(response=>{
+      console.log(response);
+    })
+    .then(err=>{
+        console.err(err);
+    });
 
-//use middleware
+app.use(session(sessConfig,app));
 app.use(serve(__dirname+"/public"));
 app.use(logger());
 app.use(render);
@@ -38,10 +54,10 @@ app.use(async(ctx, next) => {
     } catch (err) {
         ctx.status = err.status || 500;
         if (ctx.status === 404) {
-            //Your 404.jade
+            //Your 404.view
             await ctx.render('404.html')
         } else {
-            //other_error jade
+            //other_error view
             await ctx.render('other_error')
         }
     }
