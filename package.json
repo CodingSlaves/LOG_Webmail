@@ -1,6 +1,12 @@
 {
   "name": "LOG_Webmail",
   "version": "0.0.1",
+  "description": "This project for 18/03/08",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "github.com/CodingSlaves/LOG_Webmail"
+  },
   "dependencies": {
     "ejs": "^2.5.7",
     "http2": "^3.3.7",
@@ -9,10 +15,11 @@
     "koa-logger": "^3.1.0",
     "koa-morgan": "^1.0.1",
     "koa-router": "^7.4.0",
+    "koa-session": "^5.8.1",
     "koa-static": "^4.0.2",
     "koa-views": "^6.1.3",
-    "mongoose": "^5.0.3",
-    "nodemailer": "^4.4.2",
+    "mongoose": "^5.0.6",
+    "nodemailer": "^4.5.0",
     "path": "^0.12.7"
   },
   "scripts": {
