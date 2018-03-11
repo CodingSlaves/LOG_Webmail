@@ -138,7 +138,8 @@ input {
         width: calc(100% - var(--nav-width));
         height: var(--nav-height);
         margin: auto;
-        background-image: url(../images/orange-polygon.png);
+        background-image: url("../images/orange-polygon.png");
+        background-size: cover;
         box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.329) inset;
         transition: 0.2s;
     }
@@ -219,11 +220,13 @@ input {
 
     #provider-in {
         /* flex: 1; */
-        display: flex;
+        /* display: flex; */
         margin: 20px;
     }
-
     .bold-border {
+    }
+    .flex {
+        display: flex;
     }
 
     .mail-del {
