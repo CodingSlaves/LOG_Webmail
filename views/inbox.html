@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Email</title>
+    <!-- 탭 아이콘 -->
+    <!-- <link rel="icon" href="images/favicon.png"> -->
+    <link rel="icon" href="../public/images/favicon.png">
 
     <!-- 내부 css -->
-     <link rel="stylesheet" href="stylesheets/main.css">
-    <!--<link rel="stylesheet" href="../public/stylesheets/main.css">-->
+     <!-- <link rel="stylesheet" href="stylesheets/main.css"> -->
+    <link rel="stylesheet" href="../public/stylesheets/main.css">
 
     <!-- 외부 js -->
     <!-- <link href="https://cdn.quilljs.com/1.3.5/quill.snow.css" rel="stylesheet">
@@ -18,12 +21,12 @@
     <script>tinymce.init({ selector:'textarea' });</script>
 
     <!-- 내부 js -->
-    <!-- <script src="scripts/main.js"></script> -->
-    <script src="../public/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- <script src="../public/scripts/main.js"></script> -->
 
 </head>
-<!-- 아이언맨의 왼손은? -->
-<!-- 스타크래프트 -->
+<!-- 돼지가 말을 타면? -->
+<!-- 피그마 -->
 <body>
 
     <nav>
@@ -95,12 +98,14 @@
                 <span class="big-font"><span class="log-color">받은</span> 메일함</span><br>
                 <table>
                     <tr class="bold-border">
-                        <th class="mail-del mail-list-top"><i>삭제</i></th>
-                        <th class="mail-title mail-list-top"><i>메일 제목</i></th>
-                        <th class="mail-sender mail-list-top"><i>보낸 사람</i></th>
-                        <th class="mail-DNT mail-list-top"><i>일시</i></th>
+                        <div class="flex">
+                            <th class="mail-del mail-list-top"><i>삭제</i></th>
+                            <th class="mail-title mail-list-top"><i>메일 제목</i></th>
+                            <th class="mail-sender mail-list-top"><i>보낸 사람</i></th>
+                            <th class="mail-DNT mail-list-top"><i>일시</i></th>
+                        </div>
                     </tr>
-                    <% for (var mail of mails) { %>
+                    <!-- <% for (var mail of mails) { %> -->
                         <tr>
                             <div class="mail-lists-tr">
                                 <td class="mail-lists"></td>
@@ -123,8 +128,7 @@
                             </div>
                         </tr>
 -->
-                    <% } %>
-
+                    <!-- <% } %> -->
                 </table>
             </div>
         </div>

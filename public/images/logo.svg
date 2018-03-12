@@ -1,0 +1,35 @@
+<svg width="181" height="181" viewBox="0 0 181 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>teamlog-logo</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(618 208)">
+<g id="teamlog-logo">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-571 -161)" fill="#F25827"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-618 -161)" fill="#808080"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-524 -114)" fill="#666666"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-571 -114)" fill="#999999"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-571 -67)" fill="#4D4D4D"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-477 -114)" fill="#C3262E"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-524 -208)" fill="#C2272D"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-524 -161)" fill="#EB1C26"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 8C 0 3.58172 3.58172 0 8 0L 32 0C 36.4183 0 40 3.58172 40 8L 40 32C 40 36.4183 36.4183 40 32 40L 8 40C 3.58172 40 0 36.4183 0 32L 0 8Z"/>
+</defs>
+</svg>
