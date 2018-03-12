@@ -1,4 +1,6 @@
+
 exports.inbox = async (ctx,next)=>{
+
     await ctx.render('inbox.html');
 };
 exports.send = async (ctx,next)=>{

@@ -9,8 +9,12 @@ const logger = require('koa-logger');
 const morgan = require('koa-morgan');
 const serve = require('koa-static');
 const session = require('koa-session');
+const body = require('koa-body');
 const render = require('./lib/render');
 const index = require('./route/index');
+const login = require('./route/login');
+const signUp = require('./route/signUp');
+const sendMail = require('./route/sendMail');
 //create Object
 const app = module.exports = new koa();
 const router = new Router();
@@ -21,23 +25,21 @@ const serverOption = {
 };
 const accessLogStream = fs.createWriteStream(__dirname + '/access.log',
     { flags: 'a' });
-const dbConfig  ={
-    MONGO_URI : "mongodb://localhost:27017/mail"
-};
 const sessConfig = {
     key: 'koa:sess',
     maxAge: 86400000
 };
+app.keys = ['asdfasf'];
 db.Promise = global.Promise;
-//use middleware\
-db.connect(dbConfig)
-    .then(response=>{
-      console.log(response);
+//use middleware
+db.connect("mongodb://localhost:27017/mail")
+    .then(() => {
+        console.log('connect success');
     })
-    .then(err=>{
-        console.err(err);
+    .catch(err=>{
+        console.error(err);
     });
-
+app.use(body());
 app.use(session(sessConfig,app));
 app.use(serve(__dirname+"/public"));
 app.use(logger());
@@ -55,7 +57,7 @@ app.use(async(ctx, next) => {
         ctx.status = err.status || 500;
         if (ctx.status === 404) {
             //Your 404.view
-            await ctx.render('404.html')
+            await ctx.render('404',{message:"404 NOT FOUND"});
         } else {
             //other_error view
             await ctx.render('other_error')
@@ -67,7 +69,10 @@ router.get('/',index.login)
     .get('/send',index.send)
     .get('/deposit',index.deposit)
     .get('/inbox',index.inbox)
-    .get('/sent-mail',index.sentMail);
+    .get('/sent-mail',index.sentMail)
+    .post('/login',login)
+    .post('/signUp',signUp)
+    .post('/sendMail',sendMail);
 
 app.use(router.routes());
 app.use(router.allowedMethods());
