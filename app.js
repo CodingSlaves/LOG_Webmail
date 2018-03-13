@@ -3,7 +3,7 @@
 const koa = require('koa');
 const Router = require('koa-router');
 const db = require('mongoose');
-const http2 = require('http2');
+const https = require('https');
 const fs = require('fs');
 const logger = require('koa-logger');
 const morgan = require('koa-morgan');
@@ -77,5 +77,5 @@ router.get('/',index.login)
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-const server = http2.createSecureServer(serverOption,app.callback());
-server.listen(3000);
+const server = https.createServer(serverOption,app.callback());
+server.listen(443);
